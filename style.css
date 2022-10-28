@@ -1,0 +1,119 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    display:flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.conteudo{
+    background-color: hsl(244, 38%, 16%);
+    width: 61rem;
+    height: 24.8rem;
+    display: flex;
+    margin: 1rem 1rem;
+    border-radius: 9px 9px;
+}
+
+.texto{
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 25rem;
+}
+
+.texto .descricao, .descricaonum{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    font-size: 15px;
+}
+
+.numeros{
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem ;
+}
+
+.imagem .desktop{
+    display:block;
+    width: 100%;
+    border-radius: 0px 9px 9px 0px;
+    order: -1;
+}
+
+.mobile{
+    display: none;
+}
+
+h1, h2{
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+}
+
+strong{
+    color: hsl(277, 64%, 61%);
+}
+
+@media all and (max-width: 900px) {
+    .conteudo{
+        width: 20rem;
+        height: 50rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 9px 9px;  
+        text-align: center; 
+        justify-content: center;   
+    }
+
+    .grid{
+        padding: 2rem;
+        max-width: 250px;
+        text-align: center; 
+        justify-content: center; 
+    }
+
+    .texto{
+        display:contents;   
+    }
+
+    h1{
+        font-size: 27px;
+    }
+
+    .texto .descricao{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .texto .descricaonum{
+        line-height: 0.1;
+    }
+       
+    .numeros{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem .desktop{
+        display: none;
+    }
+
+    .mobile{
+        margin:auto;
+        display:block;
+        max-width: 320px;
+        border-radius: 9px 9px 0px 0px;
+    }
+
+    .imagem .overline{
+        background-color: hsl(277, 64%, 61%);
+        position: relative;
+        bottom: 49.3rem;
+        opacity: 0.4;
+        width: 320px;
+        height: 236px;
+        border-radius: 9px 9px 0px 0px;
+    }
+}
